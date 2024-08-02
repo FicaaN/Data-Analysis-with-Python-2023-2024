@@ -3,6 +3,7 @@ def distinct_characters(L):
     for string in L:
         dc = set(string)
         result[string] = len(dc)
+        
     return result
 
 
