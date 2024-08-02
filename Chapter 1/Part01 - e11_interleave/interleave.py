@@ -2,6 +2,7 @@ def interleave(*lists):
     interleaved_list = []
     for list in zip(*lists):
         interleaved_list.extend(list)
+        
     return interleaved_list
 
 
