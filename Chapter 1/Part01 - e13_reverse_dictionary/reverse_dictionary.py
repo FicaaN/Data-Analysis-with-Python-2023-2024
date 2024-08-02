@@ -5,6 +5,7 @@ def reverse_dictionary(d):
             if value not in reversed:
                 reversed[value] = []
             reversed[value].append(key)
+            
     return reversed
 
 
