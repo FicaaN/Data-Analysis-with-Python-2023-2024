@@ -8,6 +8,7 @@ def acronyms(s):
     for word in words:
         if word.isupper() and len(word) >= 2:
             result.append(word)
+            
     return result
 
 
