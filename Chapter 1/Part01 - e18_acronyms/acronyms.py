@@ -3,12 +3,11 @@ import string
 
 def acronyms(s):
     result = []
-    s = s.translate(str.maketrans("", "", string.punctuation))
     words = s.split()
     for word in words:
+        word = word.strip("""!"#$%&'()*,-./:;?@[]_""")
         if word.isupper() and len(word) >= 2:
             result.append(word)
-            
     return result
 
 
