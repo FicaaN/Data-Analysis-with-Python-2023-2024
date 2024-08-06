@@ -19,9 +19,7 @@ def summary(filename):
 
     sum_numbers = sum(list_of_numbers)
     average = sum_numbers / n
-    stddev = math.sqrt(
-        sum((x - average) ** 2 for x in list_of_numbers) / (n - 1) if n > 1 else 0.0
-    )
+    stddev = math.sqrt(sum((x - average) ** 2 for x in list_of_numbers) / (n - 1) if n > 1 else 0.0)
 
     return (sum_numbers, average, stddev)
 
